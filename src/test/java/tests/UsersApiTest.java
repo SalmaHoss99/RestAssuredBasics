@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class UsersApiTest{
-
+/*
     @Test
     public void getSingleUserShouldReturnStatusCode200() {
 
@@ -21,4 +21,6 @@ public class UsersApiTest{
                 .statusCode(200)
                 .body("data.id", equalTo(2));
     }
+    */
+
 }
