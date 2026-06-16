@@ -14,8 +14,14 @@ jobs:
       - name: build
         run: echo "build"
 
+  test:
+    runs-on: ubuntu-latest
+    steps:
       - name: test
         run: echo "test"
 
-      - name: deploy
-        run: echo "deploy"
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: release
+        run: echo "release"
