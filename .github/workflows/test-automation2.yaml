@@ -1,0 +1,21 @@
+name: Original Automation Test
+
+on:
+  push:
+    branches:
+       - master
+
+#workflow_dispatch:
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello
+        run: echo "Hello"
+
+  second_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello 02
+        run: echo "Hello hello"
