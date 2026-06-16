@@ -11,8 +11,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: list code
+        run: ls
+
       - name: build
         run: echo "build"
+
 
   test:
     runs-on: ubuntu-latest
@@ -20,6 +27,7 @@ jobs:
     steps:
       - name: test
         run: echo "test"
+
 
   release:
     runs-on: ubuntu-latest
