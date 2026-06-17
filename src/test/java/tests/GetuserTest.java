@@ -72,4 +72,16 @@ public class GetuserTest extends BaseTest {
                 .statusCode(200)
                 .log().all();
     }
+    @Test
+    public void getExistingUser01() {
+        String apiKey = "reqres_bc462ca454734ed2b71eb04cc8df4613";
+        given()
+                .pathParams("id", 2)
+                .header("x-api-key", apiKey)
+                .when()
+                .get("/api/users/{id}")
+                .then()
+                .statusCode(200)
+                .log().all();
+    }
 }
